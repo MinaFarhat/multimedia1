@@ -12,6 +12,7 @@ public class KMeans {
 
     public int[] cluster(int[] pixels) {
         int n = pixels.length;
+        @SuppressWarnings("unchecked")
         List<Integer>[] clusters = new List[k];
         for (int i = 0; i < k; i++) {
             clusters[i] = new ArrayList<Integer>();
